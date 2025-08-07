@@ -1,0 +1,147 @@
+/* === Base Styles === */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+}
+
+/* === Input Area === */
+#newStory {
+  width: 100%;
+  min-height: 100px;
+  padding: 15px;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  resize: vertical;
+  transition: border 0.3s;
+}
+
+#newStory:focus {
+  outline: none;
+  border-color: #2980b9;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s;
+  margin-bottom: 30px;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* === Stories Container === */
+#stories {
+  display: grid;
+  gap: 20px;
+}
+
+.story {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-left: 4px solid #3498db;
+}
+
+.story:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.story-line {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #eee;
+}
+
+.story-line:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.story button {
+  background-color: #3498db;
+  margin-top: 10px;
+}
+
+.story button:hover {
+  background-color: #3498db;
+}
+
+.locked-message {
+  color: #e74c3c;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* === Responsive Design === */
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  #newStory {
+    min-height: 80px;
+  }
+}
+
+/* Add these to your existing CSS */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#story-preview {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.add-line-btn {
+  display: inline-block;
+  background-color:#3498db;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: all 0.3s;
+}
+
+.add-line-btn:hover {
+  background-color: #3498db;
+  transform: translateY(-2px);
+}
